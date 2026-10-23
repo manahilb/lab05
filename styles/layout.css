@@ -1,0 +1,131 @@
+/*
+filename: lab04.css
+author: manahil baig
+created: 20 October 2026
+last modified: 23 October 2026
+description:  Stylesheet for lab04.html
+*/
+
+/* Restore aside visibility on hover */
+aside:hover {
+    display: block;
+}
+
+/* Display menu items horizontally */
+.menu {
+    display: inline-block;
+}
+
+/* Remove bullet points from navigation lists */
+nav ul {
+    list-style: none;
+}
+
+
+/* Step 3 - CSS Box Model */
+
+/* Aside styling */
+aside {
+    border: 4px inset purple;
+    margin: 1em;
+    padding: 1em;
+    background-image: url("images/fade.jpg");
+    width: 30%;
+    float: right;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+/* Header styling */
+header {
+    border: 1px solid darkgray;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* Footer border */
+footer {
+    border-top: 4px double purple;
+    clear: both;
+}
+
+
+/* Step 4 - Sizing and Positioning Boxes */
+
+/* Float lists to the left */
+#lists {
+    float: left;
+}
+
+/* Float tables to the right */
+#tables {
+    float: right;
+}
+
+/* Centre the table */
+table {
+    margin: auto;
+}
+
+/* Position hyperlinks section */
+#hyperlinks {
+    clear: both;
+    float: left;
+}
+
+/* Position images section */
+#images {
+    float: right;
+}
+
+/* Add border around figures */
+figure {
+    border: 2px solid #ccc;
+}
+
+/* Set equal widths for two columns */
+#lists,
+#tables,
+#hyperlinks,
+#images {
+    width: 50%;
+    text-align: center;
+}
+
+/* Align list text to the left */
+ol,
+ul,
+dl {
+    text-align: left;
+}
+
+/* Set minimum width for article */
+article {
+    min-width: 30em;
+}
+
+
+/* Step 5 - Pseudo Class Selectors */
+
+/* Footer paragraphs */
+footer p {
+    display: inline-block;
+    width: 33%;
+}
+
+/* First footer paragraph */
+footer p:first-child {
+    float: left;
+}
+
+/* Second footer paragraph */
+footer p:nth-child(2) {
+    text-align: center;
+}
+
+/* Last footer paragraph */
+footer p:last-child {
+    float: right;
+    text-align: right;
+}
